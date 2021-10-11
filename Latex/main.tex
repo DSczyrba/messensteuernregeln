@@ -1,5 +1,19 @@
 \input{vorlage_light}
 
+%Für diese Version des Dokuments spezielle Anpassungen
+\usepackage{array}
+\newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1}}
+\definecolor{green}{RGB}{0, 153, 0}
+\newcommand{\lat}[2]{(\textit{Lateinisch \glqq{}#1\grqq{} = #2})}
+\newcommand{\merk}[1]{\glqq{}\textit{#1}\grqq{}}
+\newcommand{\rot}[1]{\textcolor{red}{#1}}
+\newcommand{\gruen}[1]{\textcolor{green}{#1}}
+\newcommand{\schwarz}[1]{\textcolor{black}{#1}}
+\newcommand{\menge}[1]{\{ #1 \}}
+\newcommand{\komplement}[1]{\overline{#1}^E}
+%\tikzstyle{every picture}+=[remember picture]
+\everymath{\displaystyle}
+
 
 \begin{document}
 \frontmatter
@@ -9,7 +23,26 @@
 \tableofcontents
 
 \mainmatter
-\section{Aufgabenstellung}
-    \label{sec:aufgabenstellung}
-    Ein Satz.
+\addsec{Aufgabe 4}
+\label{sec:aufgabe4}
+Differenzieren und integrieren Sie!
+\begin{itemize}[leftmargin=*]
+    \item[a)] $f(x) = \sin x$
+    \item[] $f^{\prime}(x) = \cos x$
+    \item[] $\int f(x) \, dx = -\cos x$ 
+    \item[b)] $f(x) = \cos x$
+    \item[] $f^{\prime}(x) = -\sin x$
+    \item[] $\int f(x) \, dx = \sin x$  
+    \item[c)] $f(x) = \sin \left(\alpha x\right)$
+    \item[] $f^{\prime}(x) = \alpha \cdot \cos \left(\alpha x\right) $
+    \item[] $\int f(x) \, dx = \frac{-\cos \left(\alpha x\right)}{\alpha} + c$   
+    \item[d)] $f(x) = \sin \left( \alpha x + b \right)$
+    \item[] $f^{\prime}(x) =  \alpha \cdot \cos\left(\alpha x +b\right)$
+    \item[] $\int f(x) \, dx = $ 
+    \item[e)] $f(x) = \cos \left(\alpha x + b\right)$  
+\end{itemize}
+
+$\left(\frac{\alpha x^2}{2} + bx\right) \cdot \alpha \cdot \cos (\alpha x + b)$
+
+
 \end{document}
